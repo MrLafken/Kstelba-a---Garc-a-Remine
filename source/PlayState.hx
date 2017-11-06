@@ -29,6 +29,7 @@ class PlayState extends FlxState
 	private var candelabro2:FlxTypedGroup<Candelabro2> = new FlxTypedGroup();
 	private var puenteFalso:FlxTypedGroup<PuenteFalso> = new FlxTypedGroup();
 	private var corazones:FlxTypedGroup<Corazon> = new FlxTypedGroup();
+	private var interfaz:Interfaz;
 
 	
 	override public function create():Void
@@ -40,9 +41,11 @@ class PlayState extends FlxState
 		//powah.kill();
 		guide = new Guia(player.x, player.y);
 		guide.visible = false;
-		testoVidas = new FlxText(20, Reg.altoPantalla - 35, 0, "Vidas: " + Reg.vidas, 24, true);
+		testoVidas = new FlxText(Reg.altoPantalla - 460, Reg.anchoPantalla - 512, 0, "Vidas: " + Reg.vidas, 24, true);
 		testoVidas.scrollFactor.set(0, 0);
 		//enemy = new Enemy (500, 200);
+		
+		interfaz = new Interfaz();
 		
 		FlxG.camera.follow(player);
 		//powah = new FlxSprite(enemy.width - 5, enemy.height / 2);
@@ -85,6 +88,7 @@ class PlayState extends FlxState
 		add(player.powah);
 		add(player);
 		add(guide);
+		add(interfaz);
 		add(testoVidas);
 		add(enemyGroup1);
 		add(enemyGroup2);

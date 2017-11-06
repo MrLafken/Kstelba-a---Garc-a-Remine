@@ -662,8 +662,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		path.set ("assets/images/ps4enemy.png", "assets/images/ps4enemy.png");
 		type.set ("assets/images/ps4enemy.png", AssetType.IMAGE);
-		path.set ("assets/images/Powah-20171023-162339.piskel", "assets/images/Powah-20171023-162339.piskel");
-		type.set ("assets/images/Powah-20171023-162339.piskel", AssetType.TEXT);
 		path.set ("assets/images/Powah.png", "assets/images/Powah.png");
 		type.set ("assets/images/Powah.png", AssetType.IMAGE);
 		path.set ("assets/images/Switch-20171027-163731.piskel", "assets/images/Switch-20171027-163731.piskel");
@@ -690,6 +688,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/tileset.png", AssetType.IMAGE);
 		path.set ("assets/images/tileset-20171104-230655.piskel", "assets/images/tileset-20171104-230655.piskel");
 		type.set ("assets/images/tileset-20171104-230655.piskel", AssetType.TEXT);
+		path.set ("assets/images/Powah-20171106-151459.piskel", "assets/images/Powah-20171106-151459.piskel");
+		type.set ("assets/images/Powah-20171106-151459.piskel", AssetType.TEXT);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
@@ -732,9 +732,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/ps4enemy.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Powah-20171023-162339.piskel";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
 		id = "assets/images/Powah.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
@@ -772,6 +769,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tileset-20171104-230655.piskel";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/Powah-20171106-151459.piskel";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
 		id = "assets/music/music-goes-here.txt";

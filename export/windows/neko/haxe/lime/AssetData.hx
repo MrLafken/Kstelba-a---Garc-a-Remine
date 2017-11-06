@@ -30,8 +30,6 @@ class AssetData {
 			type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/images/ps4enemy.png", "assets/images/ps4enemy.png");
 			type.set ("assets/images/ps4enemy.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			path.set ("assets/images/Powah-20171023-162339.piskel", "assets/images/Powah-20171023-162339.piskel");
-			type.set ("assets/images/Powah-20171023-162339.piskel", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/images/Powah.png", "assets/images/Powah.png");
 			type.set ("assets/images/Powah.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Switch-20171027-163731.piskel", "assets/images/Switch-20171027-163731.piskel");
@@ -58,6 +56,8 @@ class AssetData {
 			type.set ("assets/images/tileset.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/tileset-20171104-230655.piskel", "assets/images/tileset-20171104-230655.piskel");
 			type.set ("assets/images/tileset-20171104-230655.piskel", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/images/Powah-20171106-151459.piskel", "assets/images/Powah-20171106-151459.piskel");
+			type.set ("assets/images/Powah-20171106-151459.piskel", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 			type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
