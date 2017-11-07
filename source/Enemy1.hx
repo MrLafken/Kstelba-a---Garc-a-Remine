@@ -24,12 +24,17 @@ class Enemy1 extends FlxSprite
 		//velocity.y = -100;
 		//acceleration.y = 1600;
 		scale.set(2.5, 2.5);
-		movimiento();
+		
 		updateHitbox();
 	}
 	override public function update(elapse:Float):Void
 	{
 		super.update(elapse);
+		
+		if (isOnScreen()) 
+		{
+			movimiento();
+		}
 	}
 	
 	function movimiento():Void 

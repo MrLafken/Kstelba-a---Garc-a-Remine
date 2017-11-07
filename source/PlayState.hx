@@ -36,7 +36,7 @@ class PlayState extends FlxState
 	{
 		super.create();
 		
-		player = new Player (200, 460);
+		player = new Player (50, 50);
 		//powah = new Powah(player.x + player.width, player.y + (player.height / 2));
 		//powah.kill();
 		guide = new Guia(player.x, player.y);
@@ -46,6 +46,7 @@ class PlayState extends FlxState
 		//enemy = new Enemy (500, 200);
 		
 		interfaz = new Interfaz();
+		
 		
 		FlxG.camera.follow(player);
 		//powah = new FlxSprite(enemy.width - 5, enemy.height / 2);
@@ -157,7 +158,7 @@ class PlayState extends FlxState
 	
 		if (FlxG.keys.pressed.R) 
 		{
-			player.reset(200,200);
+			player.reset(50,50);
 		}
 		
 	}

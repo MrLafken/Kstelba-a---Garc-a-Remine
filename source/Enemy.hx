@@ -20,6 +20,8 @@ class Enemy extends FlxSprite
 		acceleration.y = 1600;
 		scale.set(2, 2);
 		
+		
+		
 		updateHitbox();
 	}
 	

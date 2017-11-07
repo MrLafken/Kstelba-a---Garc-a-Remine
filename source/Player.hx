@@ -42,7 +42,7 @@ class Player extends FlxSprite
 		
 		scale.set(2, 2);
 		
-		acceleration.y = 1600;
+		acceleration.y = 1850;
 		currentState = States.IDLE;
 		updateHitbox();
 	}
