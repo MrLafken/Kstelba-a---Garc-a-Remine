@@ -14,6 +14,8 @@ class Corazon extends FlxSprite
 	{
 		super(X, Y, SimpleGraphic);
 		loadGraphic(AssetPaths.corazon__png);
+		
+		scale.set(1, 1);
 	}
 	
 }

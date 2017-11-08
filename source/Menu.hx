@@ -20,11 +20,11 @@ class Menu extends FlxState
 	{
 		super.create();
 		
-		texto = new FlxText(0, FlxG.height / 4, 0, "KSTELBAÑA", 12, true);
+		texto = new FlxText(0, FlxG.height / 4, 0, "KSTELBAÑA", 30, true);
 		texto.screenCenter(X);
 		add(texto);
 		
-		play = new FlxButton(0, 0, "JUGAR", ponePlay);
+		play = new FlxButton(0,0, "JUGAR", ponePlay);
 		play.screenCenter();
 		add(play);
 		

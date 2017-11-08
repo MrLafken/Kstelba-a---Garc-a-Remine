@@ -161,6 +161,11 @@ class PlayState extends FlxState
 			player.reset(50,50);
 		}
 		
+		if (Reg.vidas == 0)
+		{
+			FlxG.switchState(new GameOver());
+		}
+		
 	}
 	
 	function coras() 
@@ -175,6 +180,7 @@ class PlayState extends FlxState
 			player.kill();
 			player.powah.kill();
 			Reg.vidas --;
+			player.reset(50, 50);
 		}
 	}
 	
@@ -255,6 +261,7 @@ class PlayState extends FlxState
 			player.kill();
 			player.powah.kill();
 			Reg.vidas--;
+			player.reset(50, 50);
 			
 		}
 	}
@@ -265,6 +272,7 @@ class PlayState extends FlxState
 			player.kill();
 			player.powah.kill();
 			Reg.vidas--;
+			player.reset(50, 50);
 		}
 	}
 	function bounds()

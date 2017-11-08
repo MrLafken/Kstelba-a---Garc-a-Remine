@@ -25,6 +25,9 @@ class Enemy1 extends FlxSprite
 		//acceleration.y = 1600;
 		scale.set(2.5, 2.5);
 		
+		var v = y + 25;
+		FlxTween.tween(this, {y : v}, 0.5, {type:FlxTween.PINGPONG, ease: FlxEase.sineInOut});
+		
 		updateHitbox();
 	}
 	override public function update(elapse:Float):Void
@@ -40,8 +43,7 @@ class Enemy1 extends FlxSprite
 	function movimiento():Void 
 	{
 		velocity.x = -100;
-		var v = y + 25;
-		FlxTween.tween(this, {y : v}, 0.5, {type:FlxTween.PINGPONG, ease: FlxEase.sineInOut});
+	
 	}
 	
 }
