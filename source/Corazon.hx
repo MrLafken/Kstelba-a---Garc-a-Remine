@@ -14,13 +14,11 @@ class Corazon extends FlxSprite
 	{
 		super(X, Y, SimpleGraphic);
 		loadGraphic(AssetPaths.corazon__png);
-<<<<<<< Updated upstream
-		
+
 		scale.set(1, 1);
-=======
+
 		acceleration.y = 1000;
 		velocity.y = -500;
->>>>>>> Stashed changes
-	}
+}
 	
 }
