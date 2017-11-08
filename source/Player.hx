@@ -49,11 +49,11 @@ class Player extends FlxSprite
 	
 	override public function update(elapse:Float):Void
 	{
-		
+		/*powah.x = this.x + this.width;
+		powah.y = this.y / 2;*/
 		stateMachine();
 		super.update(elapse);
 	}
-	
 	
 	private function stateMachine():Void
 	{
@@ -120,7 +120,18 @@ class Player extends FlxSprite
 			animation.play("punch");
 			powah.animation.play("powah");
 			velocity.x = 0;
-			powah.reset((this.x + this.width), this.y + this.height / 2);
+			
+		switch (Reg.izqoder) 
+		{
+			case true:
+					//powah.x = this.x + this.width;
+					powah.reset((this.x + this.width), this.y + this.height / 2);
+			case false:
+					//powah.x = this.x + this.width;
+					powah.reset((this.x +this.width), this.y + this.height / 2);
+		}
+	
+			
 		}
 	}
 	
@@ -138,14 +149,13 @@ class Player extends FlxSprite
 		
 		if (FlxG.keys.pressed.RIGHT) 
 			velocity.x += 300;
-			powah.x = this.x;
-			powah.y = this.y / 2;
+			
+			Reg.izqoder = false;
 			
 		if (FlxG.keys.pressed.LEFT) 
 			velocity.x -= 300;
-			powah.x = this.x - this.width;
-			powah.y = this.y / 2;
 			
+			Reg.izqoder = true;
 			
 		
 		if (velocity.x < 0) 

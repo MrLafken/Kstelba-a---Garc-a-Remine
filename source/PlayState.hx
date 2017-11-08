@@ -30,15 +30,21 @@ class PlayState extends FlxState
 	private var puenteFalso:FlxTypedGroup<PuenteFalso> = new FlxTypedGroup();
 	private var corazones:FlxTypedGroup<Corazon> = new FlxTypedGroup();
 	private var interfaz:Interfaz;
+	
 
 	
 	override public function create():Void
 	{
 		super.create();
 		
+
 		player = new Player (50, 50);
 		//powah = new Powah(player.x + player.width, player.y + (player.height / 2));
 		//powah.kill();
+
+		//player = new Player (200, 460);
+		
+
 		guide = new Guia(player.x, player.y);
 		guide.visible = false;
 		testoVidas = new FlxText(Reg.altoPantalla - 460, Reg.anchoPantalla - 512, 0, "Vidas: " + Reg.vidas, 24, true);
@@ -143,6 +149,7 @@ class PlayState extends FlxState
 		powahmata();
 		pinches();
 		coras();
+		//powahposition();
 		testoVidas.text = "Vidas: " + Reg.vidas; 
 		
 		
@@ -213,9 +220,13 @@ class PlayState extends FlxState
 		{
 			if (FlxG.overlap(candelabro.members[i],player.powah)) 
 			{
+				
 				candelabro.members[i].kill();
-			}
+				var cora:Corazon = new Corazon(candelabro.members[i].x, candelabro.members[i].y);
+				corazones.add(cora);
+			}			
 		}
+		i = 0;
 		
 	}
 	
@@ -296,4 +307,14 @@ class PlayState extends FlxState
 		}
 		
 	}
+		//function powahposition() 
+	//{
+		//switch (Reg.izqoder) 
+		//{
+			//case true:
+					//player.powah.x = player.x + player.width;
+			//case false:
+					//player.powah.x = player.x - player.width *2;
+		//}
+	//}
 }

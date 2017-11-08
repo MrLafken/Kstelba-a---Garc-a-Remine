@@ -81,6 +81,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		Font.registerFont (__ASSET__flixel_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__flixel_fonts_monsterrat_ttf);
 		
@@ -90,6 +91,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -536,12 +538,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if (windows || mac || linux)
 
 
-@:sound("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/sounds/beep.ogg") @:keep #if display private #end class __ASSET__flixel_sounds_beep_ogg extends flash.media.Sound {}
-@:sound("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/sounds/flixel.ogg") @:keep #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends flash.media.Sound {}
-@:font("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/fonts/nokiafc22.ttf") @:keep #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends flash.text.Font {}
-@:font("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/fonts/monsterrat.ttf") @:keep #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends flash.text.Font {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/images/ui/button.png") @:keep #if display private #end class __ASSET__flixel_images_ui_button_png extends flash.display.BitmapData {}
-@:bitmap("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/images/logo/default.png") @:keep #if display private #end class __ASSET__flixel_images_logo_default_png extends flash.display.BitmapData {}
+@:sound("D:/Haxe/haxe/lib/flixel/4,3,0/assets/sounds/beep.ogg") @:keep #if display private #end class __ASSET__flixel_sounds_beep_ogg extends flash.media.Sound {}
+@:sound("D:/Haxe/haxe/lib/flixel/4,3,0/assets/sounds/flixel.ogg") @:keep #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends flash.media.Sound {}
+@:font("D:/Haxe/haxe/lib/flixel/4,3,0/assets/fonts/nokiafc22.ttf") @:keep #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends flash.text.Font {}
+@:font("D:/Haxe/haxe/lib/flixel/4,3,0/assets/fonts/monsterrat.ttf") @:keep #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends flash.text.Font {}
+@:bitmap("D:/Haxe/haxe/lib/flixel/4,3,0/assets/images/ui/button.png") @:keep #if display private #end class __ASSET__flixel_images_ui_button_png extends flash.display.BitmapData {}
+@:bitmap("D:/Haxe/haxe/lib/flixel/4,3,0/assets/images/logo/default.png") @:keep #if display private #end class __ASSET__flixel_images_logo_default_png extends flash.display.BitmapData {}
 
 
 
@@ -639,6 +641,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -654,42 +657,44 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/kstelevel.oel", AssetType.TEXT);
 		path.set ("assets/data/Kstelevel.oep", "assets/data/Kstelevel.oep");
 		type.set ("assets/data/Kstelevel.oep", AssetType.TEXT);
-		path.set ("assets/images/GloriousPC2-20171020-165453.piskel", "assets/images/GloriousPC2-20171020-165453.piskel");
-		type.set ("assets/images/GloriousPC2-20171020-165453.piskel", AssetType.TEXT);
-		path.set ("assets/images/gloriousPC2.png", "assets/images/gloriousPC2.png");
-		type.set ("assets/images/gloriousPC2.png", AssetType.IMAGE);
-		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
-		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
-		path.set ("assets/images/ps4enemy.png", "assets/images/ps4enemy.png");
-		type.set ("assets/images/ps4enemy.png", AssetType.IMAGE);
-		path.set ("assets/images/Powah.png", "assets/images/Powah.png");
-		type.set ("assets/images/Powah.png", AssetType.IMAGE);
-		path.set ("assets/images/Switch-20171027-163731.piskel", "assets/images/Switch-20171027-163731.piskel");
-		type.set ("assets/images/Switch-20171027-163731.piskel", AssetType.TEXT);
-		path.set ("assets/images/Switch.png", "assets/images/Switch.png");
-		type.set ("assets/images/Switch.png", AssetType.IMAGE);
 		path.set ("assets/images/Candelabro-20171101-150050.piskel", "assets/images/Candelabro-20171101-150050.piskel");
 		type.set ("assets/images/Candelabro-20171101-150050.piskel", AssetType.TEXT);
 		path.set ("assets/images/Candelabro.png", "assets/images/Candelabro.png");
 		type.set ("assets/images/Candelabro.png", AssetType.IMAGE);
 		path.set ("assets/images/corazon.png", "assets/images/corazon.png");
 		type.set ("assets/images/corazon.png", AssetType.IMAGE);
+		path.set ("assets/images/GloriousPC2-20171020-165453.piskel", "assets/images/GloriousPC2-20171020-165453.piskel");
+		type.set ("assets/images/GloriousPC2-20171020-165453.piskel", AssetType.TEXT);
+		path.set ("assets/images/gloriousPC2.png", "assets/images/gloriousPC2.png");
+		type.set ("assets/images/gloriousPC2.png", AssetType.IMAGE);
+		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
+		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		path.set ("assets/images/pinche-20171101-155723.piskel", "assets/images/pinche-20171101-155723.piskel");
 		type.set ("assets/images/pinche-20171101-155723.piskel", AssetType.TEXT);
 		path.set ("assets/images/pinche.png", "assets/images/pinche.png");
 		type.set ("assets/images/pinche.png", AssetType.IMAGE);
+		path.set ("assets/images/Powah-20171023-162339.piskel", "assets/images/Powah-20171023-162339.piskel");
+		type.set ("assets/images/Powah-20171023-162339.piskel", AssetType.TEXT);
+		path.set ("assets/images/Powah-20171106-151459.piskel", "assets/images/Powah-20171106-151459.piskel");
+		type.set ("assets/images/Powah-20171106-151459.piskel", AssetType.TEXT);
+		path.set ("assets/images/Powah.png", "assets/images/Powah.png");
+		type.set ("assets/images/Powah.png", AssetType.IMAGE);
+		path.set ("assets/images/ps4enemy.png", "assets/images/ps4enemy.png");
+		type.set ("assets/images/ps4enemy.png", AssetType.IMAGE);
 		path.set ("assets/images/puentefalso-20171101-162554.piskel", "assets/images/puentefalso-20171101-162554.piskel");
 		type.set ("assets/images/puentefalso-20171101-162554.piskel", AssetType.TEXT);
 		path.set ("assets/images/puentefalso.png", "assets/images/puentefalso.png");
 		type.set ("assets/images/puentefalso.png", AssetType.IMAGE);
-		path.set ("assets/images/xboxpelota.png", "assets/images/xboxpelota.png");
-		type.set ("assets/images/xboxpelota.png", AssetType.IMAGE);
-		path.set ("assets/images/tileset.png", "assets/images/tileset.png");
-		type.set ("assets/images/tileset.png", AssetType.IMAGE);
+		path.set ("assets/images/Switch-20171027-163731.piskel", "assets/images/Switch-20171027-163731.piskel");
+		type.set ("assets/images/Switch-20171027-163731.piskel", AssetType.TEXT);
+		path.set ("assets/images/Switch.png", "assets/images/Switch.png");
+		type.set ("assets/images/Switch.png", AssetType.IMAGE);
 		path.set ("assets/images/tileset-20171104-230655.piskel", "assets/images/tileset-20171104-230655.piskel");
 		type.set ("assets/images/tileset-20171104-230655.piskel", AssetType.TEXT);
-		path.set ("assets/images/Powah-20171106-151459.piskel", "assets/images/Powah-20171106-151459.piskel");
-		type.set ("assets/images/Powah-20171106-151459.piskel", AssetType.TEXT);
+		path.set ("assets/images/tileset.png", "assets/images/tileset.png");
+		type.set ("assets/images/tileset.png", AssetType.IMAGE);
+		path.set ("assets/images/xboxpelota.png", "assets/images/xboxpelota.png");
+		type.set ("assets/images/xboxpelota.png", AssetType.IMAGE);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
@@ -720,27 +725,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/Kstelevel.oep";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-		id = "assets/images/GloriousPC2-20171020-165453.piskel";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/gloriousPC2.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/images-go-here.txt";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/ps4enemy.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Powah.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Switch-20171027-163731.piskel";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/Switch.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Candelabro-20171101-150050.piskel";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -750,10 +734,31 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/corazon.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/GloriousPC2-20171020-165453.piskel";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/gloriousPC2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/images-go-here.txt";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
 		id = "assets/images/pinche-20171101-155723.piskel";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
 		id = "assets/images/pinche.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Powah-20171023-162339.piskel";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/Powah-20171106-151459.piskel";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/Powah.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/ps4enemy.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/puentefalso-20171101-162554.piskel";
@@ -762,18 +767,21 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/puentefalso.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/xboxpelota.png";
+		id = "assets/images/Switch-20171027-163731.piskel";
 		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/tileset.png";
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/Switch.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tileset-20171104-230655.piskel";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-		id = "assets/images/Powah-20171106-151459.piskel";
+		id = "assets/images/tileset.png";
 		path.set (id, id);
-		type.set (id, AssetType.TEXT);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/xboxpelota.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/music/music-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -821,6 +829,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1603,6 +1612,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1612,6 +1622,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
 
 
 
@@ -1651,12 +1662,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if (windows || mac || linux || cpp)
 
 
-@:file("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/sounds/beep.ogg") #if display private #end class __ASSET__flixel_sounds_beep_ogg extends lime.utils.ByteArray {}
-@:file("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/sounds/flixel.ogg") #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends lime.utils.ByteArray {}
-@:font("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/fonts/nokiafc22.ttf") #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font {}
-@:font("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/fonts/monsterrat.ttf") #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font {}
-@:image("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/images/ui/button.png") #if display private #end class __ASSET__flixel_images_ui_button_png extends lime.graphics.Image {}
-@:image("C:/HaxeToolkit/haxe/lib/flixel/4,3,0/assets/images/logo/default.png") #if display private #end class __ASSET__flixel_images_logo_default_png extends lime.graphics.Image {}
+@:file("D:/Haxe/haxe/lib/flixel/4,3,0/assets/sounds/beep.ogg") #if display private #end class __ASSET__flixel_sounds_beep_ogg extends lime.utils.ByteArray {}
+@:file("D:/Haxe/haxe/lib/flixel/4,3,0/assets/sounds/flixel.ogg") #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends lime.utils.ByteArray {}
+@:font("D:/Haxe/haxe/lib/flixel/4,3,0/assets/fonts/nokiafc22.ttf") #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font {}
+@:font("D:/Haxe/haxe/lib/flixel/4,3,0/assets/fonts/monsterrat.ttf") #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font {}
+@:image("D:/Haxe/haxe/lib/flixel/4,3,0/assets/images/ui/button.png") #if display private #end class __ASSET__flixel_images_ui_button_png extends lime.graphics.Image {}
+@:image("D:/Haxe/haxe/lib/flixel/4,3,0/assets/images/logo/default.png") #if display private #end class __ASSET__flixel_images_logo_default_png extends lime.graphics.Image {}
 
 
 
