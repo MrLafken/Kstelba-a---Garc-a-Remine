@@ -141,7 +141,6 @@ class PlayState extends FlxState
 	{
 		super.update(elapsed);
 		updateGuia();
-		velocidadEnemigos();
 		colisionEnemigos2();
 		colisionEnemigos1();
 		checkVidas();
@@ -245,18 +244,6 @@ class PlayState extends FlxState
 		}
 	}
 	
-	function velocidadEnemigos() 
-	{
-		for (i in 0...enemyGroup2.members.length) 
-		{
-			
-			if (enemyGroup2.members[i].x> guide.x+ 256) 
-			{
-				enemyGroup2.members[i].velocity.x = 0;
-			}
-			enemyGroup2.members[i].velocity.x = -300;
-		}
-	}
 	
 	function updateGuia() 
 	{
