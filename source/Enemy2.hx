@@ -18,8 +18,8 @@ class Enemy2 extends FlxSprite
 		animation.play("Vuelta");
 		scale.set(2, 2);
 		
-		velocity.x = 0;
-		velocity.y = 0;
+		acceleration.y = 1000;
+		
 		
 		
 		updateHitbox();
@@ -37,7 +37,8 @@ class Enemy2 extends FlxSprite
 	
 	public function movimiento() 
 	{
-		velocity.x = -300;
+		velocity.x = -200;
+		
 	}
 	
 	
